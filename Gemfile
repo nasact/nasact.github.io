@@ -9,3 +9,4 @@ gem "jekyll-algolia"
 
 # To enable `jekyll-remote-theme`, which is used in this project
 gem "jekyll-remote-theme"
+gem "csv"
