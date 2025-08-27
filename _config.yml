@@ -19,3 +19,9 @@ collections:
     output: true
     permalink: /:collection/:name/
 search: false
+algolia:
+  application_id: '7CQPGKE1IR'
+  index_name: 'site_index'
+  search_only_api_key: '030785ac665c56451e7a6cba1c17d7d1'
+  nodes_to_index: 'p, h1, h2, h3, h4, h5, h6'
+
