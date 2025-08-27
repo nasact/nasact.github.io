@@ -11,7 +11,4 @@ title: "Your Site's Title"
 subtitle: "A short, descriptive subtitle."
 description: "A description of your website."
 url: "https://nasact.github.io" # the base hostname & protocol for your site
-repository: your_username/your_username.github.io
-
-# To prevent jekyll from ignoring your files
-include: ["_pages"]
+repository: nasact/nasact.github.io
