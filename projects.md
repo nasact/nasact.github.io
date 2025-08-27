@@ -7,9 +7,7 @@ permalink: /projects/
 
 Below is a list of our latest projects.
 
-{% assign projects = site.projects | where: "category", "projects" | sort: "title" %}
-
-{% for project in projects %}
-- [{{ project.title }}]({{ project.permalink }})
-  <small>({{ project.excerpt | strip_html | truncate: 150 }})</small>
+{% for project in site.projects %}
+  - [{{ project.title }}]({{ project.url }})
+    <small>({{ project.excerpt | strip_html | truncate: 150 }})</small>
 {% endfor %}
