@@ -4,6 +4,7 @@ plugins:
  - jekyll-include-cache
  - jekyll-paginate
  - jekyll-sitemap
+ - jekyll-algolia
 
 # Site settings
 # To be replaced with your own information
@@ -17,4 +18,4 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name/
-search: true
+search: false
