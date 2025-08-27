@@ -1,0 +1,23 @@
+name: Push to Algolia
+on:
+  push:
+    branches:
+      - main
+jobs:
+  algolia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+      - name: Install Jekyll dependencies
+        run: |
+          gem install bundler jekyll-algolia
+          bundle install
+      - name: Push to Algolia
+        run: jekyll algolia
+        env:
+          ALGOLIA_APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
